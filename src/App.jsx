@@ -37,6 +37,10 @@ function App() {
           </div>
         </div>
       </section>
+
+      <section id="about" className="about">
+        <h2>ABOUT ME</h2>
+      </section>
     </main>
   )
 }
