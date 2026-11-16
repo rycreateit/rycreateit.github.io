@@ -1,6 +1,5 @@
 import './App.css'
-import visualDesigner from './assets/visual-designer.png'
-import webDeveloper from './assets/web-developer.png'
+import aboutReference from './assets/about-reference.jpg'
 
 function App() {
   return (
@@ -20,26 +19,22 @@ function App() {
               <h1 key={line}>Hi, I’m <em>Ryza Lozano</em></h1>
             ))}
 
-            <img
-              src={visualDesigner}
-              alt="Visual Designer"
-              className="designer-label"
-            />
+            <div className="designer-label">
+              Visual Designer
+            </div>
 
-            <img
-              src={webDeveloper}
-              alt="Web Developer"
-              className="developer-label"
-            />
+            <div className="developer-label">
+              Web Developer
+            </div>
           </div>
 
           <div className="portrait-placeholder">
           </div>
         </div>
       </section>
-
+      {/* Temporary placeholder: This reference image will be replaced with the actual About Me layout and coded widgets. */}
       <section id="about" className="about">
-        <h2>ABOUT ME</h2>
+        <img src={aboutReference} alt="About Me design reference" className="about-reference"/>
       </section>
     </main>
   )
