@@ -1,16 +1,35 @@
-# React + Vite
+# RY CREATE IT.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing my journey, skills, projects, and experiences as a Web Developer and Visual Designer.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+RY CREATE IT. is my personal portfolio website, created to introduce myself, showcase my work, and document my growth in the field of technology and design.
 
-## React Compiler
+The website serves as a central space where visitors can explore my background, projects, blog posts, and ways to connect with me.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built With
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Website Sections
+
+- **Home** – Introduction and personal branding.
+- **About** – Background, interests, and personal information.
+- **Projects** – Selected projects and development work.
+- **Blogs** – Articles, notes, and learning experiences.
+- **Contact** – Ways to get in touch.
+
+## Project Status
+
+Currently under development.
+
+## Author
+
+**Ryza Lozano**
+
+- GitHub: [@rycreateit](https://github.com/rycreateit)
+- Portfolio: [rycreateit.github.io](https://rycreateit.github.io)
