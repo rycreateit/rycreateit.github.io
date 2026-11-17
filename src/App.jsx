@@ -1,4 +1,5 @@
 import './App.css'
+import portfolioProfile from './assets/portfolio-profile.png'
 import aboutReference from './assets/about-reference.jpg'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           </div>
 
           <div className="portrait-placeholder">
+            <img src={portfolioProfile} alt="Portrait of Ryza Lozano" />
           </div>
         </div>
       </section>
