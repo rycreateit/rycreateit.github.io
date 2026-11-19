@@ -149,8 +149,8 @@ nav a:hover {
 }
 
 .portrait-placeholder img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
   object-position: center bottom;
   display: block;
@@ -170,4 +170,148 @@ nav a:hover {
   height: 100vh;
   object-fit: contain;
   object-position: center;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+/* Laptops and anything narrower than the original design */
+@media (max-width: 1400px) {
+  nav {
+    justify-content: flex-end;
+    gap: 4vw;
+  }
+
+  nav a {
+    font-size: clamp(11px, 1.143vw, 16px);
+  }
+
+  .home-content {
+    grid-template-columns: 1fr 33.29vw;
+    gap: 2.857vw;
+  }
+
+  .hero-text {
+    padding: 3.214vw 0;
+    transform: translateY(-5vw);
+  }
+
+  .hero-text h1 {
+    font-size: 4.571vw;
+    white-space: nowrap;
+  }
+
+  .designer-label {
+    width: 24.18vw;
+    height: 6.429vw;
+    top: 14.286vw;
+    left: 3.714vw;
+    font-size: 2.571vw;
+  }
+
+  .developer-label {
+    width: 24.18vw;
+    height: 6.429vw;
+    top: 28.214vw;
+    left: 11.643vw;
+    font-size: 2.571vw;
+  }
+
+  .portrait-placeholder {
+    width: 33.29vw;
+    height: 40.86vw;
+    border-radius: 1.714vw;
+    transform: translateY(-0.357vw);
+  }
+}
+
+/* Tablets and phones */
+@media (max-width: 900px) {
+  nav {
+    justify-content: flex-end;
+  }
+
+  .home {
+    min-height: auto;
+  }
+
+  .home-content {
+    align-items: start;
+    min-height: auto;
+    padding-top: 10vw;
+    padding-bottom: 8vw;
+  }
+
+  .hero-text {
+    transform: none;
+  }
+
+  .portrait-placeholder {
+    transform: none;
+    margin-top: 9.157vw;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  nav {
+    justify-content: flex-end;
+    gap: 3.2vw;
+    padding: 0 4%;
+  }
+
+  nav a {
+    font-size: clamp(10px, 2.6vw, 14px);
+  }
+
+  .home-content {
+    grid-template-columns: 1fr 37.86vw;
+    gap: 3.25vw;
+    padding: 10vw 5% 8vw;
+  }
+
+  .hero-text {
+    padding: 3.656vw 0;
+  }
+
+  .hero-text h1 {
+    font-size: 5.2vw;
+  }
+
+  .designer-label {
+    width: 27.51vw;
+    height: 7.31vw;
+    top: 16.25vw;
+    left: 4.225vw;
+    font-size: 2.925vw;
+  }
+
+  .developer-label {
+    width: 27.51vw;
+    height: 7.31vw;
+    top: 32.09vw;
+    left: 13.24vw;
+    font-size: 2.925vw;
+  }
+
+  .portrait-placeholder {
+    width: 37.86vw;
+    height: 46.48vw;
+    border-radius: 1.95vw;
+    margin-top: 10.416vw;
+  }
+}
+
+/* Phones in landscape (short screens) */
+@media (max-height: 500px) and (orientation: landscape) {
+  .home,
+  .home-content {
+    min-height: auto;
+  }
+}
+
+/* Very large screens (4K / ultrawide) */
+@media (min-width: 1800px) {
+  .home-content {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
